@@ -1,0 +1,12 @@
+Product edited successfully!: Produkt został edytowany pomyślnie !
+Product added successfully!: Produkt dodany pomyślnie !
+Product deleted!: Produkt usunięty!
+Category added successfully!: Kategoria dodana pomyślnie !
+Category edited successfully!: Kategoria została edytowana pomyślnie !
+Category deleted!: Kategoria usunięta !
+Your password should be at least {{ limit }} characters: Hasło powinno zawierać co najmniej {{ limit }} znaków
+Password: Hasło
+Agree terms: Akceptuję regulamin
+You should agree to our terms: Powinieneś zgodzić się na nasze warunki
+Please enter a password: Proszę wprowadzić hasło
+There is already an account with this email: Konto z tym adresem e-mail już istnieje

@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} ORDER {% endblock %}
+
+{% block body %}
+    <br><br>
+    <div style="text-align: center; color: #00ff00"><h1>SUCCESS</h1></div><br><br>
+    <div style="text-align: center; color: #0f48f1"><h3>Your Order:</h3></div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Sum</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for productInCart in productsInCart %}
+            <tr>
+                <td><img src="{{ asset('upload/images') }}/{{ productInCart.image }}" alt="" style="max-width: 100px; max-height: 50px;"></td>
+                <td>{{ productInCart.name }}</td>
+                <td>{{ productInCart.price }}</td>
+                <td>{{ productInCart.quantity }}</td>
+                <td>{{ productInCart.sum }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table><br>
+
+    <hr>
+    <h2>Total price: {{ totalPrice }}</h2>
+
+
+
+
+{% endblock %}

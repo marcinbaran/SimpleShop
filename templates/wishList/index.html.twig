@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}WishList{% endblock %}
+
+{% block body %}
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>{% trans %}Product id{% endtrans %}</th>
+            <th>{% trans %}Action{% endtrans %}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for productIdOnWishList in productsIdOnWishList %}
+            <tr>
+                <td>{{ productIdOnWishList }}</td>
+                <td>
+                    <form method="post" action="{{ path('remove_product_from_wish_list', {'id': productIdOnWishList}) }}?_method=DELETE">
+                        <button class="btn btn-danger">X</button>
+                    </form>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">{% trans %}no records found{% endtrans %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <form method="post" action="{{ path('clear_wish_list') }}?_method=DELETE">
+        <button class="btn btn-danger">{% trans %}Clear wish list{% endtrans %}</button>
+    </form>
+{% endblock %}

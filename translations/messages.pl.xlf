@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="pl" target-language="pl" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="AMQ64.R" resname="Product edited successfully!">
+        <source>Product edited successfully!</source>
+        <target>Produkt został edytowany pomyślnie !</target>
+      </trans-unit>
+      <trans-unit id="xNiQ0us" resname="Product added successfully!">
+        <source>Product added successfully!</source>
+        <target>Produkt dodany pomyślnie !</target>
+      </trans-unit>
+      <trans-unit id="Q_v_584" resname="Product deleted!">
+        <source>Product deleted!</source>
+        <target>Produkt usunięty!</target>
+      </trans-unit>
+      <trans-unit id="62daH2P" resname="Category added successfully!">
+        <source>Category added successfully!</source>
+        <target>Kategoria dodana pomyślnie !</target>
+      </trans-unit>
+      <trans-unit id="zDstO7x" resname="Category edited successfully!">
+        <source>Category edited successfully!</source>
+        <target>Kategoria została edytowana pomyślnie !</target>
+      </trans-unit>
+      <trans-unit id="_iqBgkC" resname="Category deleted!">
+        <source>Category deleted!</source>
+        <target>Kategoria usunięta !</target>
+      </trans-unit>
+      <trans-unit id=".esazsm" resname="Your password should be at least {{ limit }} characters">
+        <source>Your password should be at least {{ limit }} characters</source>
+        <target>Hasło powinno zawierać conajmniej {{ limit }} znaków</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>Hasło</target>
+      </trans-unit>
+      <trans-unit id="c1prjRW" resname="Agree terms">
+        <source>Agree terms</source>
+        <target>Akceptuję regulamin</target>
+      </trans-unit>
+      <trans-unit id="FQn1YfJ" resname="Save">
+        <source>Save</source>
+        <target>Zapisz</target>
+      </trans-unit>
+      <trans-unit id="M3Bw5ll" resname="Symfony Catalog">
+        <source>Symfony Catalog</source>
+        <target>Strona główna</target>
+      </trans-unit>
+      <trans-unit id="REE8PZe" resname="Are you sure you want to delete this item?">
+        <source>Are you sure you want to delete this item?</source>
+        <target>Na pewno chcesz usunąć ten przedmiot?</target>
+      </trans-unit>
+      <trans-unit id="4tClSWj" resname="Delete">
+        <source>Delete</source>
+        <target>Usuń</target>
+      </trans-unit>
+      <trans-unit id="KLBDtvE" resname="Main Page">
+        <source>Main Page</source>
+        <target>Strona główna</target>
+      </trans-unit>
+      <trans-unit id="uLHYlMa" resname="Categories">
+        <source>Categories</source>
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="_574lBd" resname="Product">
+        <source>Product</source>
+        <target>Produkt</target>
+      </trans-unit>
+      <trans-unit id="wuCWhCU" resname="WishList">
+        <source>WishList</source>
+        <target>Lista życzeń</target>
+      </trans-unit>
+      <trans-unit id="ScJmuqq" resname="Search">
+        <source>Search</source>
+        <target>Wyszukiwarka</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>Wyloguj</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>Zarejestruj</target>
+      </trans-unit>
+      <trans-unit id="nWMiwfT" resname="Login">
+        <source>Login</source>
+        <target>Zaloguj</target>
+      </trans-unit>
+      <trans-unit id="Lw6xhZ4" resname="Hello :)">
+        <source>Hello :)</source>
+        <target>Witaj :)</target>
+      </trans-unit>
+      <trans-unit id="87w3aU9" resname="&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;">
+        <source>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</source>
+        <target><![CDATA[<p>Jakiś tekst</p>]]></target>
+      </trans-unit>
+      <trans-unit id="TtyL_vx" resname="Products">
+        <source>Products</source>
+        <target>Produkty</target>
+      </trans-unit>
+      <trans-unit id="9ZheX9T" resname="Product index">
+        <source>Product index</source>
+        <target>Wszystkie produkty</target>
+      </trans-unit>
+      <trans-unit id="3NHVIj9" resname="Name">
+        <source>Name</source>
+        <target>Nazwa</target>
+      </trans-unit>
+      <trans-unit id="Um4Ah8w" resname="Description">
+        <source>Description</source>
+        <target>Opis</target>
+      </trans-unit>
+      <trans-unit id="bk0LHGc" resname="Creation date">
+        <source>Creation date</source>
+        <target>Data utworzenia</target>
+      </trans-unit>
+      <trans-unit id="SYhhNSV" resname="Last modification date">
+        <source>Last modification date</source>
+        <target>Data ostatniej modyfikacji</target>
+      </trans-unit>
+      <trans-unit id="Kw3N1AA" resname="actions">
+        <source>actions</source>
+        <target>Akcje</target>
+      </trans-unit>
+      <trans-unit id="HGMzUJ3" resname="show">
+        <source>show</source>
+        <target>Wyświetl</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>Edytuj</target>
+      </trans-unit>
+      <trans-unit id="eV7.2Hy" resname="New Product">
+        <source>New Product</source>
+        <target>Nowy produkt</target>
+      </trans-unit>
+      <trans-unit id="xGLeTFY" resname="Create new Product">
+        <source>Create new Product</source>
+        <target>Utwórz nowy produkt</target>
+      </trans-unit>
+      <trans-unit id="U0M9PNE" resname="back to list">
+        <source>back to list</source>
+        <target>Wróć do listy</target>
+      </trans-unit>
+      <trans-unit id="D5lam8." resname="no records found">
+        <source>no records found</source>
+        <target>Nie znaleziono rekordów</target>
+      </trans-unit>
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>Utwórz nowy</target>
+      </trans-unit>
+      <trans-unit id="QUc94hI" resname="Add to WishList">
+        <source>Add to WishList</source>
+        <target>Dodaj do listy życzeń</target>
+      </trans-unit>
+      <trans-unit id="RkxP.QG" resname="Edit">
+        <source>Edit</source>
+        <target>Edytuj</target>
+      </trans-unit>
+      <trans-unit id="yq9oQvd" resname="Edit Product">
+        <source>Edit Product</source>
+        <target>Edytuj Produkt</target>
+      </trans-unit>
+      <trans-unit id="wcEAnT8" resname="Update">
+        <source>Update</source>
+        <target>Aktualizuj</target>
+      </trans-unit>
+      <trans-unit id="uImyAJR" resname="Product Category index">
+        <source>Product Category index</source>
+        <target>Wszystkie kategorie</target>
+      </trans-unit>
+      <trans-unit id="KSwG8AR" resname="Category">
+        <source>Category</source>
+        <target>Kategoria</target>
+      </trans-unit>
+      <trans-unit id="rIYnrws" resname="Product Category">
+        <source>Product Category</source>
+        <target>Kategoria produktu</target>
+      </trans-unit>
+      <trans-unit id="LuPQ2fa" resname="Edit Product Category">
+        <source>Edit Product Category</source>
+        <target>Edytuj kategorię produktu</target>
+      </trans-unit>
+      <trans-unit id="Ogh45Pp" resname="New Category">
+        <source>New Category</source>
+        <target>Nowa kategoria</target>
+      </trans-unit>
+      <trans-unit id="W6joEsF" resname="Create new Category">
+        <source>Create new Category</source>
+        <target>Utwórz nową kategorię</target>
+      </trans-unit>
+      <trans-unit id="2u9._DH" resname="Product id">
+        <source>Product id</source>
+        <target>Identyfikator produktu</target>
+      </trans-unit>
+      <trans-unit id="ZM.xMZ0" resname="Action">
+        <source>Action</source>
+        <target>Akcja</target>
+      </trans-unit>
+      <trans-unit id="58ETuVG" resname="Clear wish list">
+        <source>Clear wish list</source>
+        <target>Wyczyść listę życzeń</target>
+      </trans-unit>
+      <trans-unit id="xjLVpgG" resname="Default image">
+        <source>Default image</source>
+        <target>Domyślny obrazek</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

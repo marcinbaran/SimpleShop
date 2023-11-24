@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}New Category{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1>{% trans %}Create new Category{% endtrans %}</h1>
+
+    {{ include('productCategory/_form.html.twig') }}
+
+    <a href="{{ path('product_category_index') }}">{% trans %}back to list{% endtrans %}</a>
+{% endblock %}

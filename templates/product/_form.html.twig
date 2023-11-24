@@ -1,0 +1,17 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Save')|trans }}</button>
+{{ form_end(form) }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>
+<script type="text/javascript">
+    $("#product_defaultImage").ddslick({
+        width: '100%',
+        imagePosition: "left",
+        selectText: "Domyślny obrazek",
+        onSelected: function (selectedData) {
+            $('.dd-selected-value').prop('name', 'defaultImageId');
+        }
+    })
+</script>

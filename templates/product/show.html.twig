@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Product{% endtrans %}: {{ product.name }}{% endblock %}
+
+{% block body %}
+    <h1>{% trans %}Product{% endtrans %}</h1>
+    <form action="{{ path('add_to_wish_list', {'id': product.id} )}}" method="post">
+        <button type="submit" class="btn btn-info">{% trans %}Add to WishList{% endtrans %}</button>
+    </form>
+
+    {% if app.user %}
+        <br><br>
+        <label for="quantity">Number of item</label>
+        <input type="number" id="quantity" name="quantity" value="1" class="form-control" min="1">
+        <button type="submit" id="execute" class="btn btn-success">Add to Cart</button>
+        <br><br>
+    {% endif %}
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ product.id }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Name{% endtrans %}</th>
+                <td>{{ product.name }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Description{% endtrans %}</th>
+                <td>{{ product.description }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Categories{% endtrans %}</th>
+                <td>
+                    {% for category in categories %}
+                        <a href="{{ path('product_category_show', {'id': category.id}) }}"> {{ category.name}} </a> &nbsp;
+                    {% else %}
+                        {% trans %}no records found{% endtrans %}
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>{% trans %}Creation date{% endtrans %}</th>
+                <td>{{ product.creationDate ? product.creationDate|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Last modification date{% endtrans %}</th>
+                <td>{{ product.lastModificationDate ? product.lastModificationDate|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('product_index') }}">{% trans %}back to list{% endtrans %}</a>
+
+    <a href="{{ path('product_edit', {'id': product.id}) }}">{% trans %}edit{% endtrans %}</a>
+
+    {{ include('product/_delete_form.html.twig') }}
+
+    <br><br>
+    <h3>Gallery</h3>
+    {% for image in images %}
+        <img src="{{ asset('/upload/images') }}/{{ image.fileName }}" alt=""><br><br>
+    {% endfor %}
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(document).on('click', "#execute", function(e){
+                var count = $('input[name=quantity]').val();
+                $.ajax({
+                    url: '{{ (path('add_product_to_cart')) }}',
+                    type: "POST",
+                    dataType: "json",
+                    data: { id: {{ product.id }}, quantity: count },
+                    async: true,
+                    success: alert("{{ product.name }}" + " added to cart")
+                });
+            });
+        });
+
+    </script>
+
+{% endblock %}

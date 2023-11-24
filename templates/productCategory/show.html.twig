@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {% trans %}Category{% endtrans %}: {{ productCategory.name}} {% endblock %}
+
+{% block body %}
+    <h1>{% trans %}Product Category{% endtrans %}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ productCategory.id }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Name{% endtrans %}</th>
+                <td>{{ productCategory.name }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Description{% endtrans %}</th>
+                <td>{{ productCategory.description }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Products{% endtrans %}</th>
+                <td>
+                    {% for product in products %}
+                        <a href="{{ path('product_show', {'id': product.id}) }}"> {{ product.name}} </a> -
+                        <a href="{{ path('add_to_wish_list', {'id': product.id}) }}"> {% trans %}Add to WishList{% endtrans %} </a><br>
+                    {% else %}
+                        {% trans %}no records found{% endtrans %}
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>{% trans %}Creation date{% endtrans %}</th>
+                <td>{{ productCategory.creationDate ? productCategory.creationDate|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Last modification date{% endtrans %}</th>
+                <td>{{ productCategory.lastModificationDate ? productCategory.lastModificationDate|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('product_category_index') }}">{% trans %}back to list{% endtrans %}</a>
+
+    <a href="{{ path('product_category_edit', {'id': productCategory.id}) }}">{% trans %}edit{% endtrans %}</a>
+
+    {{ include('productCategory/_delete_form.html.twig') }}
+{% endblock %}

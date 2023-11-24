@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Products{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1>{% trans %}Product index{% endtrans %}</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>{% trans %}Default image {% endtrans %}</th>
+                <th>{% trans %}Name{% endtrans %}</th>
+                <th>{% trans %}Description{% endtrans %}</th>
+                <th>{% trans %}Creation date{% endtrans %}</th>
+                <th>{% trans %}Last modification date{% endtrans %}</th>
+                <th>{% trans %}actions{% endtrans %}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>
+                    {% if product.defaultimage %}
+                        <img src="{{ asset('upload/images') }}/{{ product.defaultImage.fileName }}" alt="" style="max-width: 100px; max-height: 50px;">
+                    {% endif %}
+                </td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.creationDate ? product.creationDate|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ product.lastModificationDate ? product.lastModificationDate|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('product_show', {'id': product.id}) }}">{% trans %}show{% endtrans %}</a>
+                    <a href="{{ path('product_edit', {'id': product.id}) }}">{% trans %}edit{% endtrans %}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">{% trans %}no records found{% endtrans %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('product_new') }}">{% trans %}Create new{% endtrans %}</a>
+{% endblock %}

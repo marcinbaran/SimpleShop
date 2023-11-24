@@ -1,0 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\WelcomeController::index
+
+welcome:
+  path: /welcome
+  controller: App\Controller\WelcomeController::index
